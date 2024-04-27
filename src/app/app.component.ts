@@ -5,7 +5,26 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
+export class AppComponent{
+  
+  fontSize = 16;
+  
+  
+  
+  
+  
+  
+  
+  blueClass = false;
+  blueVioletClass = false;
+
+  setCurrentClasses(toggle: boolean) {
+    return {
+      blue_violet: toggle
+    }
+  }
+
+
   name: string = 'angkur mondal';
   imgURL = 'https://picsum.photos/id/15/200/300'
   currentDate: Date = new Date();
@@ -15,6 +34,8 @@ export class AppComponent {
     toppings: ['pepperoni', 'bacon'],
     size: 'large'
   }
+
+  
 
   getName() {
     return this.name;

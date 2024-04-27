@@ -1,4 +1,19 @@
+.blue {
+    background-color: blue;
+}
+
+.blue_violet {
+    background-color: blueviolet;
+}
+
+
 input {
     display: block;
     margin: 10px 0px;
 }
+
+hr {
+    margin: 10px 0px;
+}
+
+
